@@ -48,7 +48,7 @@
 2. 下载Kaggle数据集，放入对应路径
 3. 推荐在Kaggle Notebook或者本地Jupyter环境运行
 4. 依赖安装命令：`pip install -r requirements.txt`
-5. 实验输出的ROC曲线、混淆矩阵等可视化图表保存在 `results/` 文件夹
+5. 实验输出的ROC曲线、性能汇总表等可视化图表保存在 `results/` 文件夹
 
 
 ## 局限性
