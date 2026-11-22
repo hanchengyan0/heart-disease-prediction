@@ -44,10 +44,12 @@
 在该中小规模多源临床结构化数据集上，**随机森林、XGBoost等树集成模型泛化性能最优**；TabNet、FT-Transformer等基于注意力机制的表格深度学习模型并未体现优势，FT-Transformer效果明显下降，说明这类深度模型对样本量、数据分布偏移更加敏感，不一定天然适合中小规模临床队列。
 
 ## 复现指南
-1. 下载本仓库的 `heart-disease-8models-final.ipynb`
+1. 下载本仓库 `src/heart-disease-8models-final.ipynb`
 2. 下载Kaggle数据集，放入对应路径
 3. 推荐在Kaggle Notebook或者本地Jupyter环境运行
-4. 依赖包：numpy, pandas, scikit-learn, torch, matplotlib, seaborn
+4. 依赖安装命令：`pip install -r requirements.txt`
+5. 实验输出的ROC曲线、混淆矩阵等可视化图表保存在 `results/` 文件夹
+
 
 ## 局限性
 数据集由多中心历史队列拼接而成，存在中心间分布偏移；仅使用静态横断面结构化特征，未纳入时序、影像等多模态信息；仅为公开数据集回顾性实验，不能直接用于临床诊断。
